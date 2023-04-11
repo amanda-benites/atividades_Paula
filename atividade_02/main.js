@@ -11,24 +11,22 @@ console.log(funcaoArea(a1, l1))
 
 // // 2. Escreva uma função que pede ao usuário o ano atual e seu ano de nascimento e imprima no console sua idade.
 function funcaoIdade(atual, nasc) {
-    idade = atual - nasc
+    const idade = atual - nasc
     return idade
 }
 
 const v1 = Number(prompt("Digite o ano atual:"))
 const v2 = Number(prompt("Digite o ano do seu nascimento:"))
-
 console.log(funcaoIdade(v1, v2))
 
 // // 3. Escreva uma função que recebe o peso em kg e a altura em metros de uma pessoa e retorna o seu IMC (Índice de Massa Corpórea).
 const funcaoImc = (peso, altura) => {
-    imc = peso / (altura**2)
+    const imc = peso / (altura**2)
     return imc
 }
 
 const a = Number(prompt("Digite seu peso em kg:"))
-const b = Number(prompt("Difite sua altura em metros:"))
-
+const b = Number(prompt("Digite sua altura em metros:"))
 console.log(funcaoImc(a, b))
 
 // // 4. Escreva uma função que recebe duas strings e retorna um booleano (true ou false) indicando se elas possuem o mesmo tamanho.
@@ -38,7 +36,6 @@ function funcaoString(str1, str2) {
 
 const x = prompt("Digite uma palavra:")
 const y = prompt("Digite outra palavra:")
-
 console.log(funcaoString(x, y))
 
 // // 5. Escreva uma função que recebe um array e retorna o último elemento.
@@ -57,7 +54,6 @@ function funcaoIguais(m, n) {
 
 const m1 = prompt("Digite uma palavra:")
 const n1 = prompt("Digite outra palavra:")
-
 console.log(funcaoIguais(m1, n1))
 
 // 7. Escreva uma função que pergunta ao usuário o ano atual, o ano de nascimento de uma pessoa, e o ano em que sua carteira de identidade foi emitida (nessa ordem). A função deve imprimir no console um booleano (true ou false) que indica se a carteira precisa ser renovada ou não. A carteira precisa ser renovada segundo os seguintes critérios:
@@ -66,8 +62,8 @@ console.log(funcaoIguais(m1, n1))
 // - c) Para pessoas acima dos 50 anos, deve ser renovada de 15 em 15 anos.
 
 const funcaoIdent = (anoAtual, anoNasc, anoIdent) => {
-    age = anoAtual - anoNasc
-    renova = anoAtual - anoIdent
+    const age = anoAtual - anoNasc
+    const renova = anoAtual - anoIdent
     if(age <= 20) {
         if(renova >= 5) {
             return true
@@ -89,8 +85,8 @@ const funcaoIdent = (anoAtual, anoNasc, anoIdent) => {
     }
 }
 
-atualAno = Number(prompt("Digite o ano atual:"))
-nascAno = Number(prompt("Digite o seu ano de nascimento:"))
-identAno = Number(prompt("Digite o ano em que foi emitida sua carteira de identidade:"))
+const atualAno = Number(prompt("Digite o ano atual:"))
+const nascAno = Number(prompt("Digite o seu ano de nascimento:"))
+const identAno = Number(prompt("Digite o ano em que foi emitida sua carteira de identidade:"))
 
 console.log(funcaoIdent(atualAno, nascAno, identAno))
