@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto';
+}
+
+header {
+    background-color: #4747EA;
+    width: 98vw;
+    height: 10vh;
+    color: #FFCCFF;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+main {
+    width: 100vw;
+    height: 83vh;
+    /* background-color: #f7e4de; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.atividade {
+    width: 15vw;
+    height: 40vh;
+    border-radius: 20px;
+    box-shadow:0 3px 15px 2px #CCC;
+    font-size: small;
+}
+.atividade:hover {
+    width: 17vw;
+    height: 42vh;
+}
+.texto {
+    padding-left: 2vh;
+    padding-right: 1vh;
+    padding-top: 2vh;
+    height: 33vh;
+    font-size: smaller;
+}
+h2 {
+    font-size: x-large;
+    color: #4747EA;
+    padding-bottom: 3vh;
+}
+.botao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1vw lightgray solid;
+}
+button {
+    background-color: transparent;
+    border: none;
+    color: #4747EA;
+    width: 13vw;
+    height: 5vh;
+    border-radius: 0px 0px 20px 20px;
+}
+button:hover {
+    background-color: #FFCCFF;
+    border-radius: 0px 0px 20px 20px;
+    width: 17vw;
+    height: 7vh;
+}
+
+footer {
+    background-color: #FFCCFF;
+    width: 100vw;
+    height: 7vh;
+    color: #4747EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
